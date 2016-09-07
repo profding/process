@@ -12,6 +12,10 @@ main(void)
     printf("before create son ,parent count is %d\n",count);
 
     pid = vfork();// 这里是vfork
+/*
+child by 
+*/
+//vfork创造出来的子进程还会导致父进程挂起，除非子进程执行了exit 或者 execve才会唤起父进程。
 
     if(pid < 0)
     {
