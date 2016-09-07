@@ -13,7 +13,7 @@ main(void)
 
     pid = vfork();// 这里是vfork
 /*
-child by 
+vfork创建出来的子进程与父进程之间是共享内存区的。
 */
 //vfork创造出来的子进程还会导致父进程挂起，除非子进程执行了exit 或者 execve才会唤起父进程。
 
